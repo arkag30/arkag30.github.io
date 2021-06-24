@@ -100,18 +100,11 @@
 
 \MyName{Arka Ghosh}
 \MySlogan{B.Sc. Computer Science Student}
+\MySlogan{Interests:Cyber security,Networking,Information Security, Cryptography. }
+\MySlogan{Website: \url{arkag30.github.io}}
+\MySlogan{Linkedin: \url{https://www.linkedin.com/in/arkag30/}}
 
 \sepspace
-
-%%% Personal details
-%%% ------------------------------------------------------------
-\NewPart{Personal details}{}
-
-\PersonalEntry{Birth}{July 16, 2000}
-\PersonalEntry{Address}{193/b, Barasat Road, Jayhindhpally, Barrackpore, Kolkata 700122}
-\PersonalEntry{Phone}{+91 8100131881}
-\PersonalEntry{Mail}{\url{arkag30@gmail.com}}
-\PersonalEntry{Research Interests:}{Cyber security,Networking,Information Security, Cryptography.}
 
 %%% Education
 %%% ------------------------------------------------------------
@@ -134,30 +127,19 @@
 \EducationEntry{IIT Madras Certified Python Course}{2021}{Completed an in detailed course on python programming under the distance learning by IIT Madras.}
 \sepspace
 
+\EducationEntry{Cyber Security Course}{2021}{Cyber Security and Ethical Hacking for Beginners and Advanced from GUVI Geek.}
+\sepspace
+
 \EducationEntry{Inter School Band Competition}{2017}{Second Runner Up in the Auxi Aura 2017 inter school band competition.}
 \sepspace
 
 \EducationEntry{All Bengal Drawing Competition}{2010}{Achieved 7th position in the all bengal drawing competition.}
 \sepspace
-
-
 %%% Skills
 %%% ------------------------------------------------------------
 \NewPart{Skills}{}
-
-\SkillsEntry{Languages}{Bengali (mother tongue)}
-\SkillsEntry{}{English (fluent)}
-\SkillsEntry{}{Hindi (fluent)}
-
 \SkillsEntry{Technical Skills}{\textsc{C}, \textsc{C++}, \textsc{Java}, \textsc{Python}, \textsc{MySQL}, \textsc{GIT}, \textsc{HTML}, \textsc{CSS}}
 
 \SkillsEntry{Other Skills}{\textsc{Guitar}, \textsc{Ukulele}, \textsc{Harmonica}, \textsc{Painting}, \textsc{Abacus(Level 8)}}
-
-
-%%% References
-%%% ------------------------------------------------------------
-\NewPart{References}
-\SkillsEntry{Website}{\url{arkag30.github.io}}
-\SkillsEntry{Linkedin}{\url{https://www.linkedin.com/in/arkag30/}}
 
 \end{document}
