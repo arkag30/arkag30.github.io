@@ -87,7 +87,7 @@
 \item \url{https://arkag30.medium.com/}
 \item \url{https://www.researchgate.net/profile/Arka-Ghosh-13/savedlist}
 \end{rSubsection}
-\begin{rSubsection}{Technical Writing}{}{}{}
+\begin{rSubsection}{Other Skills}{}{}{}
 \item Guitar, Ukulele, Harmonica, Painting, Abacus(Level 8)
 \end{rSubsection}
 \end{rSection}
