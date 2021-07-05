@@ -70,9 +70,9 @@
 %\begin{rSubsection}{Inter School Band Competition}{2017}{Auxi-Aura}{}
 %\item Second Runner Up in the Auxi Aura 2017 inter school band competition.
 %\end{rSubsection}
-%\begin{rSubsection}{All Bengal Drawing Competition}{2010}{Auxi-Aura}{}
-%\item Achieved 7th position in the all bengal drawing competition.
-%\end{rSubsection}
+\begin{rSubsection}{All Bengal Drawing Competition}{2010}{WB Government}{}
+\item Achieved 7th position in the all bengal drawing competition.
+\end{rSubsection}
 \end{rSection}
 %----------------------------------------------------------------------------------------
 %   Technical Experience 
@@ -81,7 +81,9 @@
 
 \begin{rSection}{Projects}
 \begin{rSubsection}{Technical Project:}{}{}{}
-\item Created a OWASP Juice Shop and found 50+ vulnerabilities using Kali Linux, Burp suite and other Pen-testing Tools.
+\item Created a OWASP Juice Shop and found 50+ vulnerabilities using Kali Linux, Burp suite, etc.
+\item Created a News Website and hosted it with github's static web hosting.
+\item Created the arcade snake game and Ping Pong Game using Python(Pygame PIP).
 \end{rSubsection}
 \begin{rSubsection}{Technical Writings:}{}{}{}
 \item I write articles related to cybersecurity online. Links to my articles are stated below:
