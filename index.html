@@ -497,6 +497,363 @@
         .egg:hover #two {
             display: block
         }
+
+        :root {
+            --cyber-bg: #000000;
+            --cyber-panel: #020202;
+            --cyber-panel-soft: #060806;
+            --cyber-text: #e4f7ea;
+            --cyber-muted: #8ea596;
+            --cyber-line: rgba(0, 255, 136, 0.22);
+            --cyber-accent: #00ff88;
+            --cyber-accent-2: #b7ff5a;
+            --cyber-warning: #f0c85a;
+        }
+
+        body {
+            background:
+                linear-gradient(90deg, rgba(0, 255, 136, 0.045) 1px, transparent 1px),
+                linear-gradient(0deg, rgba(0, 255, 136, 0.035) 1px, transparent 1px),
+                radial-gradient(circle at 16% 8%, rgba(0, 255, 136, 0.08), transparent 24rem),
+                radial-gradient(circle at 92% 18%, rgba(183, 255, 90, 0.05), transparent 26rem),
+                var(--cyber-bg);
+            background-size: 48px 48px, 48px 48px, auto, auto, auto;
+            color: var(--cyber-text);
+        }
+
+        body:before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background: linear-gradient(rgba(0, 255, 136, 0.035) 50%, rgba(0, 0, 0, 0.08) 50%);
+            background-size: 100% 4px;
+            opacity: 0.55;
+            z-index: 0;
+        }
+
+        .crt-wrapper,
+        #crtContainer,
+        .crt-container,
+        .crt-container-sm,
+        .crt-container-lg {
+            position: relative;
+            z-index: 1;
+        }
+
+        #crtContainer,
+        #crtFooter {
+            background: transparent !important;
+        }
+
+        .crt-card,
+        .crt-side-box-1,
+        .crt-nav-cont,
+        .crt-paper,
+        .crt-paper-cont,
+        .crt-paper-layers:before,
+        .crt-paper-layers:after,
+        #sticky-widget-inner {
+            background: var(--cyber-panel) !important;
+            background-color: var(--cyber-panel) !important;
+            border-color: var(--cyber-line) !important;
+            box-shadow: 0 22px 70px rgba(0, 0, 0, 0.75);
+        }
+
+        .crt-card.bg-primary {
+            background:
+                linear-gradient(160deg, rgba(0, 255, 136, 0.10), rgba(183, 255, 90, 0.035)),
+                var(--cyber-panel) !important;
+        }
+
+        .crt-card:before,
+        .crt-paper:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            border: 1px solid rgba(0, 255, 136, 0.16);
+        }
+
+        .crt-paper {
+            color: var(--cyber-text);
+        }
+
+        .crt-paper p,
+        .crt-paper li,
+        .crt-paper small,
+        .education-company,
+        .post-content,
+        .text-muted {
+            color: var(--cyber-muted) !important;
+        }
+
+        .crt-paper p[style*="color:#0077C0"],
+        .crt-paper h3[style*="color: #0077C0"] {
+            color: var(--cyber-accent) !important;
+        }
+
+        h1,
+        h2,
+        h3,
+        .title-lg,
+        .text-upper,
+        strong,
+        .crt-card h2 {
+            color: var(--cyber-text) !important;
+            letter-spacing: 0;
+        }
+
+        h2.title-lg:before {
+            content: "$ ";
+            color: var(--cyber-accent);
+            display: inline;
+        }
+
+        a,
+        a:visited,
+        .text-primary {
+            color: var(--cyber-accent) !important;
+        }
+
+        a:hover,
+        a:active {
+            color: #ffffff !important;
+        }
+
+        mark,
+        input[type='submit'],
+        .bg-primary,
+        .btn-primary,
+        .btn-default,
+        .education-date,
+        .progress-bullets .bullet.fill {
+            background-color: var(--cyber-accent) !important;
+            color: #06121f !important;
+        }
+
+        .btn-default,
+        .btn-primary,
+        .btn-bordered,
+        #crtNavSm .current a,
+        .progress-bullets .bullet,
+        .education-date:after,
+        .education-date:before {
+            border-color: var(--cyber-accent) !important;
+        }
+
+        .btn {
+            border-radius: 6px;
+            font-weight: 700;
+        }
+
+        .crt-nav a {
+            color: var(--cyber-muted) !important;
+        }
+
+        .crt-nav a:hover,
+        .crt-nav .current a {
+            color: var(--cyber-accent) !important;
+        }
+
+        .crt-avatar-state1 img,
+        .crt-avatar img {
+            border: 2px solid rgba(0, 255, 136, 0.76);
+            box-shadow: 0 0 34px rgba(0, 255, 136, 0.30);
+        }
+
+        .section {
+            position: relative;
+        }
+
+        .section:before {
+            content: "";
+            display: block;
+            width: 46px;
+            height: 3px;
+            margin: 0 0 20px;
+            background: linear-gradient(90deg, var(--cyber-accent), var(--cyber-accent-2));
+        }
+
+        .brd-btm,
+        hr,
+        th,
+        td,
+        blockquote,
+        .reference-box,
+        .crt-head-inner,
+        .post-tags a,
+        .tabs .tabs-menu,
+        .education-box {
+            border-color: var(--cyber-line) !important;
+        }
+
+        .education:before,
+        .education-box:before {
+            background-color: rgba(0, 255, 136, 0.30) !important;
+        }
+
+        .education-date {
+            border-radius: 5px;
+            font-weight: 800;
+        }
+
+        .crt-icon-list li {
+            background: rgba(0, 255, 136, 0.07);
+            border: 1px solid var(--cyber-line);
+            border-radius: 6px;
+            margin: 0 10px 10px 0;
+            padding: 10px 12px;
+        }
+
+        .cyber-kicker {
+            color: var(--cyber-accent);
+            display: block;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 1.8px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .cyber-kicker:before {
+            content: "root@arka:~# ";
+            color: var(--cyber-warning);
+            display: inline;
+        }
+
+        .cyber-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 18px;
+        }
+
+        .cyber-tags span {
+            background: rgba(0, 255, 136, 0.06);
+            border: 1px solid rgba(0, 255, 136, 0.32);
+            border-radius: 999px;
+            color: var(--cyber-text);
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 1;
+            padding: 8px 11px;
+        }
+
+        #crtBgShape1 polygon {
+            fill: rgba(0, 255, 136, 0.08) !important;
+        }
+
+        #crtBgShape2 polygon {
+            fill: rgba(183, 255, 90, 0.05) !important;
+        }
+
+        #crtFooter p {
+            color: var(--cyber-muted);
+        }
+
+        .cyber-command-nav {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            margin: 0 0 18px;
+        }
+
+        .cyber-command-nav button {
+            align-items: center;
+            background: rgba(2, 4, 3, 0.88);
+            border: 1px solid rgba(0, 255, 136, 0.24);
+            border-radius: 8px;
+            color: var(--cyber-muted);
+            cursor: pointer;
+            display: flex;
+            font-family: 'Libre Franklin', sans-serif;
+            font-size: 12px;
+            font-weight: 800;
+            gap: 8px;
+            justify-content: center;
+            min-height: 48px;
+            padding: 10px 12px;
+            text-transform: uppercase;
+            transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+        }
+
+        .cyber-command-nav button:before {
+            color: var(--cyber-accent);
+            content: "[" attr(data-prefix) "]";
+            font-size: 11px;
+        }
+
+        .cyber-command-nav button:hover,
+        .cyber-command-nav button.is-active {
+            background: rgba(0, 255, 136, 0.10);
+            border-color: rgba(0, 255, 136, 0.62);
+            color: var(--cyber-text);
+            transform: translateY(-1px);
+        }
+
+        body.portfolio-dynamic .portfolio-panel {
+            display: none;
+        }
+
+        body.portfolio-dynamic .portfolio-panel.is-active {
+            display: block;
+        }
+
+        body.portfolio-dynamic .portfolio-panel.is-active .crt-paper {
+            animation: panelReveal 0.28s ease-out;
+        }
+
+        @keyframes panelReveal {
+            from {
+                opacity: 0;
+                transform: translateY(12px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (min-width: 992px) {
+            body.portfolio-dynamic .cyber-command-nav {
+                position: sticky;
+                top: 18px;
+                z-index: 4;
+            }
+
+            body.portfolio-dynamic .portfolio-panel.is-active .crt-paper {
+                max-height: calc(100vh - 118px);
+                overflow-y: auto;
+                scrollbar-color: var(--cyber-accent) rgba(2, 4, 3, 0.92);
+                scrollbar-width: thin;
+            }
+
+            body.portfolio-dynamic .portfolio-panel.is-active .crt-paper::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            body.portfolio-dynamic .portfolio-panel.is-active .crt-paper::-webkit-scrollbar-thumb {
+                background: var(--cyber-accent);
+                border-radius: 999px;
+            }
+
+            body.portfolio-dynamic .portfolio-panel.is-active .crt-paper::-webkit-scrollbar-track {
+                background: rgba(2, 4, 3, 0.92);
+            }
+        }
+
+        @media (max-width: 767px) {
+            .cyber-command-nav {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .cyber-command-nav button {
+                font-size: 11px;
+                min-height: 44px;
+            }
+        }
     </style>
     <style type="text/css">
         .recentcomments a {
@@ -548,7 +905,7 @@
     <meta name="msapplication-TileImage" content="designer/assets/favicon.ico" />
 </head>
 
-<body class="home page-template-default page page-id-5 wp-custom-logo crt crt-layers-1 crt-nav-on crt-nav-type2 crt-main-nav-off crt-side-box-on crt-sidebar-on" data-color="#000066">
+<body class="home page-template-default page page-id-5 wp-custom-logo crt crt-layers-1 crt-nav-on crt-nav-type2 crt-main-nav-off crt-side-box-on crt-sidebar-on" data-color="#19d3b2">
     <div class="crt-wrapper">
         <header id="crtHeader" class="crt-logo-in">
             <nav id="crtNavSm" class="crt-nav hidden-lg hidden-md">
@@ -591,8 +948,8 @@
                                 </div>
                                 <div class="crt-card-info clear-mrg">
                                     <h2 class="text-upper">Arka Ghosh</h2>
-                                    <p class="text-muted">PhD Information Science and Technology with a concentration in Cybersecurity</p>
-                                    <strong class="text-muted">Geroge Mason University, Fairfax, VA, USA<br><br></strong>
+                                    <p class="text-muted">Cybersecurity PhD Student</p>
+                                    <strong class="text-muted">George Mason University, Fairfax, VA, USA<br><br></strong>
                                     <ul class="crt-social clear-list">
                                         <!-- <li><a target="_blank" href="https://www.facebook.com/evijit/"><span
                                                     class="fab fa-facebook-f"></span></a></li> -->
@@ -663,26 +1020,30 @@
                 </div>
             </div>
             <div class="crt-container-sm">
-                <div class="crt-paper-layers crt-animate">
+                <div class="cyber-command-nav" aria-label="Portfolio sections">
+                    <button type="button" data-panel-target="about" data-prefix="01">Overview</button>
+                    <button type="button" data-panel-target="pubs" data-prefix="02">Publications</button>
+                    <button type="button" data-panel-target="exp" data-prefix="03">Experience</button>
+                    <button type="button" data-panel-target="edu" data-prefix="04">Education</button>
+                </div>
+                <div class="crt-paper-layers crt-animate portfolio-panel" data-panel="about">
                     <div class="crt-paper clear-mrg clearfix">
                         <div class="crt-paper-cont paper-padd clear-mrg">
                             <section id="about" class="section padd-box brd-btm">
                                 <div class="row">
                                     <div class="col-sm-12 clear-mrg text-box">
-                                        <h2 class="animation">
-                                            <span>H</span>
-                                            <span>e</span>
-                                            <span>l</span>
-                                            <span>l</span>
-                                            <span>o,</span>
-                                            <span>I'm</span>
-                                            <span>A</span>
-                                            <span>r</span>
-                                            <span>k</span>
-                                            <span>a!</span>
+                                        <h2>
+                                            <span class="cyber-kicker">Cybersecurity Researcher</span>
+                                            Hello, I'm Arka!
                                         </h2>
-                                        <p>I am a PhD Information Science and Technology student with a concentration in Cybersecurity from Geroge Mason University. 
+                                        <p>I am a PhD student in Information Science and Technology at George Mason University, working on cybersecurity problems across intrusion detection, attack graphs, network defense, and AI-assisted security analysis. 
                                         </p>
+                                        <div class="cyber-tags">
+                                            <span>IDS Rule Placement</span>
+                                            <span>Attack Graphs</span>
+                                            <span>Network Defense</span>
+                                            <span>AI for Security</span>
+                                        </div>
                                         <!-- I strive to find answers to questions about the societal impacts of modern data driven platforms and ethics in AI.  -->
                                         <!-- <div class="share-box text-left clearfix"> <button class="share-btn btn btn-bordered btn-upper">
                                             <span class="crt-icon crt-icon-share"></span>Share </button>
@@ -1350,7 +1711,7 @@
                         </div>
                     </div>
                 </div> -->
-                <div class="crt-paper-layers crt-animate">
+                <div class="crt-paper-layers crt-animate portfolio-panel" data-panel="pubs">
                     <div class="crt-paper clear-mrg clearfix">
                         <div class="crt-paper-cont paper-padd clear-mrg">
                             <section id="pubs" class="section padd-box">
@@ -1532,7 +1893,7 @@
                 </div>
 
 
-                <div class="crt-paper-layers crt-animate">
+                <div class="crt-paper-layers crt-animate portfolio-panel" data-panel="exp">
                     <div class="crt-paper clear-mrg clearfix">
                         <div class="crt-paper-cont paper-padd clear-mrg">
                             <section id="exp" class="section padd-box brd-btm">
@@ -1729,7 +2090,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="crt-paper-layers crt-animate">
+                <div class="crt-paper-layers crt-animate portfolio-panel" data-panel="edu">
                     <div class="crt-paper clear-mrg clearfix">
                         <div class="crt-paper-cont paper-padd clear-mrg">
                             <section id="edu" class="section padd-box">
@@ -2478,7 +2839,7 @@
                             </form>
                         </div> -->
         </div>
-        <div id="map" data-latitude="40.185599" data-longitude="44.515043"></div>
+        <!-- <div id="map" data-latitude="40.185599" data-longitude="44.515043"></div> -->
         </section>
     </div>
     </div>
@@ -2642,14 +3003,95 @@
         }
     </script>
     <script type="text/javascript" src="designer/wp-content/cache/minify/2/850f3.js"></script>
-    <script type='text/javascript' src='maps.googleapis.com/maps/api/www_subdomain/js_key_.js'></script>
+    <!-- <script type='text/javascript' src='maps.googleapis.com/maps/api/www_subdomain/js_key_.js'></script> -->
     <script type="text/javascript" src="designer/wp-content/cache/minify/2/9793f.js"></script>
     <script type='text/javascript'>
         var avi_vars_from_WP = {
-            themeColor: "#000066",
+            themeColor: "#19d3b2",
             mapStyles: "[\n    {\n        \"featureType\": \"administrative\",\n        \"elementType\": \"all\",\n        \"stylers\": [\n            {\n                \"saturation\": \"-100\"\n            }\n        ]\n    },\n    {\n        \"featureType\": \"administrative.province\",\n        \"elementType\": \"all\",\n        \"stylers\": [\n            {\n                \"visibility\": \"off\"\n            }\n        ]\n    },\n    {\n        \"featureType\": \"landscape\",\n        \"elementType\": \"all\",\n        \"stylers\": [\n            {\n                \"saturation\": -100\n            },\n            {\n                \"lightness\": 65\n            },\n            {\n                \"visibility\": \"on\"\n            }\n        ]\n    },\n    {\n        \"featureType\": \"poi\",\n        \"elementType\": \"all\",\n        \"stylers\": [\n            {\n                \"saturation\": -100\n            },\n            {\n                \"lightness\": \"50\"\n            },\n            {\n                \"visibility\": \"simplified\"\n            }\n        ]\n    },\n    {\n        \"featureType\": \"road\",\n        \"elementType\": \"all\",\n        \"stylers\": [\n            {\n                \"saturation\": \"-100\"\n            }\n        ]\n    },\n    {\n        \"featureType\": \"road.highway\",\n        \"elementType\": \"all\",\n        \"stylers\": [\n            {\n                \"visibility\": \"simplified\"\n            }\n        ]\n    },\n    {\n        \"featureType\": \"road.arterial\",\n        \"elementType\": \"all\",\n        \"stylers\": [\n            {\n                \"lightness\": \"30\"\n            }\n        ]\n    },\n    {\n        \"featureType\": \"road.local\",\n        \"elementType\": \"all\",\n        \"stylers\": [\n            {\n                \"lightness\": \"40\"\n            }\n        ]\n    },\n    {\n        \"featureType\": \"transit\",\n        \"elementType\": \"all\",\n        \"stylers\": [\n            {\n                \"saturation\": -100\n            },\n            {\n                \"visibility\": \"simplified\"\n            }\n        ]\n    },\n    {\n        \"featureType\": \"water\",\n        \"elementType\": \"geometry\",\n        \"stylers\": [\n            {\n                \"hue\": \"#ffff00\"\n            },\n            {\n                \"lightness\": -25\n            },\n            {\n                \"saturation\": -97\n            }\n        ]\n    },\n    {\n        \"featureType\": \"water\",\n        \"elementType\": \"labels\",\n        \"stylers\": [\n            {\n                \"lightness\": -25\n            },\n            {\n                \"saturation\": -100\n            }\n        ]\n    }\n]",
             enable_sticky: "1"
         }
+    </script>
+    <script type="text/javascript">
+        (function() {
+            var panels = Array.prototype.slice.call(document.querySelectorAll('.portfolio-panel'));
+            var controls = Array.prototype.slice.call(document.querySelectorAll('[data-panel-target]'));
+            var sectionMap = {
+                about: 'about',
+                interests: 'about',
+                pubs: 'pubs',
+                exp: 'exp',
+                timeline: 'exp',
+                edu: 'edu'
+            };
+
+            if (!panels.length || !controls.length) {
+                return;
+            }
+
+            function resolvePanel(hash) {
+                var id = (hash || '').replace('#', '');
+                return sectionMap[id] || 'about';
+            }
+
+            function setActive(panelId, writeHash) {
+                var activePanel = sectionMap[panelId] || panelId || 'about';
+
+                panels.forEach(function(panel) {
+                    panel.classList.toggle('is-active', panel.getAttribute('data-panel') === activePanel);
+                });
+
+                controls.forEach(function(control) {
+                    var isActive = control.getAttribute('data-panel-target') === activePanel;
+                    control.classList.toggle('is-active', isActive);
+                    control.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+                });
+
+                Array.prototype.slice.call(document.querySelectorAll('#crtNav a, #crtNavSm a')).forEach(function(link) {
+                    var target = resolvePanel(link.getAttribute('href'));
+                    link.parentElement.classList.toggle('current', target === activePanel);
+                });
+
+                if (writeHash) {
+                    history.pushState(null, '', '#' + activePanel);
+                }
+
+                var activePaper = document.querySelector('.portfolio-panel.is-active .crt-paper');
+                if (activePaper) {
+                    activePaper.scrollTop = 0;
+                }
+
+                var nav = document.querySelector('.cyber-command-nav');
+                if (nav && window.innerWidth < 992) {
+                    nav.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
+
+            document.body.classList.add('portfolio-dynamic');
+
+            controls.forEach(function(control) {
+                control.addEventListener('click', function() {
+                    setActive(control.getAttribute('data-panel-target'), true);
+                });
+            });
+
+            Array.prototype.slice.call(document.querySelectorAll('a[href^="#"]')).forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    var panelId = resolvePanel(link.getAttribute('href'));
+                    event.preventDefault();
+                    setActive(panelId, true);
+                });
+            });
+
+            window.addEventListener('popstate', function() {
+                setActive(resolvePanel(window.location.hash), false);
+            });
+
+            setActive(resolvePanel(window.location.hash), false);
+        }());
     </script>
     <script type="text/javascript" src="designer/wp-content/cache/minify/2/0a8c8.js"></script>
 </body>
